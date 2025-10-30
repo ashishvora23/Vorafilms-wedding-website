@@ -1,0 +1,263 @@
+@{
+    ViewData["Title"] = "Indian Weddings - Vora Films";
+    ViewData["Description"] = "Expert coverage of traditional Indian weddings - Punjabi, Gujarati, South Indian, and more. Capturing every sacred moment with cultural sensitivity.";
+}
+
+@section Head {
+    <style>
+        .wedding-hero {
+            background: linear-gradient(rgba(44, 24, 16, 0.8), rgba(139, 0, 0, 0.6)),
+                        url('/images/indian-wedding-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .culture-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            margin-bottom: 2rem;
+        }
+        
+        .culture-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .tradition-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .tradition-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .tradition-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+    </style>
+}
+
+<!-- Indian Weddings Hero -->
+<section class="wedding-hero text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <span class="indian-badge">Traditional & Modern</span>
+                <h1 class="display-3 fw-bold mb-4">Indian Wedding Photography</h1>
+                <p class="lead mb-4">Preserving the rich tapestry of Indian wedding traditions through artistic photography that honors your heritage.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wedding Cultures Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Wedding Cultures We Cover</h2>
+            <p class="section-subtitle">Experienced in capturing diverse Indian wedding traditions</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Punjabi Wedding -->
+            <div class="col-lg-6">
+                <div class="culture-card">
+                    <div class="culture-image">
+                        <img src="/images/punjabi-wedding.jpg" alt="Punjabi Wedding" class="img-fluid w-100" style="height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="culture-content p-4">
+                        <h3 class="h4 mb-3">Punjabi Weddings</h3>
+                        <p class="text-muted mb-3">Vibrant, colorful celebrations filled with music, dance, and joyous ceremonies.</p>
+                        <ul class="tradition-list">
+                            <li>Mehndi Ceremony</li>
+                            <li>Sangeet Night</li>
+                            <li>Anand Karaj</li>
+                            <li>Joota Chupai</li>
+                            <li>Reception</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gujarati Wedding -->
+            <div class="col-lg-6">
+                <div class="culture-card">
+                    <div class="culture-image">
+                        <img src="/images/gujarati-wedding.jpg" alt="Gujarati Wedding" class="img-fluid w-100" style="height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="culture-content p-4">
+                        <h3 class="h4 mb-3">Gujarati Weddings</h3>
+                        <p class="text-muted mb-3">Elegant ceremonies marked by traditional rituals and family bonding.</p>
+                        <ul class="tradition-list">
+                            <li>Pithi Ceremony</li>
+                            <li>Mandal Puja</li>
+                            <li>Jaimala</li>
+                            <li>Saptapadi</li>
+                            <li>Vidaai</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- South Indian Wedding -->
+            <div class="col-lg-6">
+                <div class="culture-card">
+                    <div class="culture-image">
+                        <img src="/images/south-indian-wedding.jpg" alt="South Indian Wedding" class="img-fluid w-100" style="height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="culture-content p-4">
+                        <h3 class="h4 mb-3">South Indian Weddings</h3>
+                        <p class="text-muted mb-3">Sacred ceremonies conducted with deep spiritual significance and traditional customs.</p>
+                        <ul class="tradition-list">
+                            <li>Muhurtham</li>
+                            <li>Kashi Yatra</li>
+                            <li>Mangalsutra</li>
+                            <li>Saptapadi</li>
+                            <li>Kanyadaan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bengali Wedding -->
+            <div class="col-lg-6">
+                <div class="culture-card">
+                    <div class="culture-image">
+                        <img src="/images/bengali-wedding.jpg" alt="Bengali Wedding" class="img-fluid w-100" style="height: 300px; object-fit: cover;">
+                    </div>
+                    <div class="culture-content p-4">
+                        <h3 class="h4 mb-3">Bengali Weddings</h3>
+                        <p class="text-muted mb-3">Cultural richness expressed through unique rituals and artistic traditions.</p>
+                        <ul class="tradition-list">
+                            <li>Gaye Holud</li>
+                            <li>Bijoya</li>
+                            <li>Saat Paak</li>
+                            <li>Mala Badal</li>
+                            <li>Subho Drishti</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="section-padding bg-light indian-pattern">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <span class="counter-number" data-target="500">0</span>
+                    <div class="counter-text">Weddings Captured</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <span class="counter-number" data-target="15">0</span>
+                    <div class="counter-text">Indian States</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <span class="counter-number" data-target="8">0</span>
+                    <div class="counter-text">Wedding Cultures</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="counter-item">
+                    <span class="counter-number" data-target="12">0</span>
+                    <div class="counter-text">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Client Stories</h2>
+            <p class="section-subtitle">What couples say about our Indian wedding photography</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-text">
+                        "Vora Films captured every emotion of our Punjabi wedding perfectly. They understood all our traditions and created memories we'll cherish forever."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/images/client1.jpg" alt="Simran & Raj" class="testimonial-avatar">
+                        <div>
+                            <strong>Simran & Raj</strong>
+                            <div class="text-muted">Punjabi Wedding, Delhi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-text">
+                        "The team was incredibly professional and respectful of our South Indian traditions. The photos are absolutely breathtaking!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/images/client2.jpg" alt="Priya & Arjun" class="testimonial-avatar">
+                        <div>
+                            <strong>Priya & Arjun</strong>
+                            <div class="text-muted">Tamil Wedding, Chennai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-text">
+                        "From the mehndi to the vidaai, every moment was captured beautifully. They made us feel so comfortable throughout!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/images/client3.jpg" alt="Neha & Amit" class="testimonial-avatar">
+                        <div>
+                            <strong>Neha & Amit</strong>
+                            <div class="text-muted">Gujarati Wedding, Ahmedabad</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-padding bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold mb-3">Ready to Preserve Your Special Day?</h2>
+                <p class="lead mb-4">Let's discuss how we can capture your unique love story with the cultural richness it deserves.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a asp-controller="Home" asp-action="Contact" class="btn btn-light btn-lg">
+                    <i class="fas fa-calendar-check me-2"></i>Book Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
